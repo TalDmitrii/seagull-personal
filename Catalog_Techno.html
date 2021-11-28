@@ -19,7 +19,7 @@
 
 		<!-- В лекциях говорили, что это логотип -->
 		<img src='#' alt='ТЕХНОМАРТ'>
-		<form action="" method="get">
+		<form action="#" method="get">
 			<input name="s" placeholder="Поиск" type="search">
 		</form>
 		<ul>
@@ -38,61 +38,63 @@
 					Оформить заказ
 				</a>
 			</li>
-			<h1>
-				<em>
-					Интернет магазин строительных материалов и инструментов для ремонта
-				</em>
-			</h1>
+		</ul>
+		<h1>
+			<em>
+				Интернет магазин строительных материалов и инструментов для ремонта
+			</em>
+		</h1>
 
-			<div>
-				<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-				<p>
-					г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-				</p>
-			</div>
-			<div>
-				<form action="" method="get">
-					<input name="r" placeholder="Равшан Джамшутович" type="text">
-				</form>
-				<ul>
-					<li>
-						<a href="#">
-							Мои заказы
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Личный кабинет
-						</a>
-					</li>
-				</ul>
-			</div>
+		<div>
+			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+			<p>
+				г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+			</p>
+		</div>
+		<div>
+			<!-- Какой тип action? -->
+			<form action="#" method="get">
+				<input name="Input-name" placeholder="Равшан Джамшутович" type="text">
+			</form>
+			<ul>
+				<li>
+					<a href="#">
+						Мои заказы
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Личный кабинет
+					</a>
+				</li>
+			</ul>
+		</div>
 
-			<nav>
-				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
-					<li>
-						<a href="#">Компания</a>
-					</li>
-					<li>
-						<a href="#">Каталог</a>
-					</li>
-					<li>
-						<a href="#">Новости</a>
-					</li>
-					<li>
-						<a href="#">Спецпредложения</a>
-					</li>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Компания</a>
+				</li>
+				<li>
+					<a href="#">Каталог</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="#">Спецпредложения</a>
+				</li>
+				<li>
+					<a href="#">Доставка</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
 
 	</header>
 	<main>
@@ -118,12 +120,12 @@
 		<h1>Перфораторы</h1>
 		<div>
 			<h2>Фильтр:</h2>
-			<form action="">
+			<form action="#">
 				<fieldset>
 					<legend>Цена:</legend>
 
 					<label for="volume">
-						<input type="range" name="volume" min="0" max="3">
+						<input type="range" id="volume" name="volume" min="0" max="3">
 					</label>
 
 					<label for="min">
@@ -139,38 +141,38 @@
 		</div>
 
 		<form>
-            <fieldset>
-                <legend>Производители:</legend>
+			<fieldset>
+				<legend>Производители:</legend>
 
-                <input type="checkbox" id="bosh" value="Bosh" name="producers">
-                <label for="bosh">Bosh</label>
+				<input type="checkbox" id="bosh" value="Bosh" name="producers">
+				<label for="bosh">Bosh</label>
 
-                <input type="checkbox" id="interskol" value="Интерскол" name="producers">
-                <label for="interskol">Интерскол</label>
+				<input type="checkbox" id="interskol" value="Интерскол" name="producers">
+				<label for="interskol">Интерскол</label>
 
-                <input type="checkbox" id="makita" value="Makita" name="producers">
-                <label for="makita">Makita</label>
+				<input type="checkbox" id="makita" value="Makita" name="producers">
+				<label for="makita">Makita</label>
 
-                <input type="checkbox" id="dewalt" value="Dewalt" name="producers">
-                <label for="dewalt">Dewalt</label>
+				<input type="checkbox" id="dewalt" value="Dewalt" name="producers">
+				<label for="dewalt">Dewalt</label>
 
-                <input type="checkbox" id="H\hitachi" value="Hitachi" name="producers">
-                <label for="hitachi">Hitachi</label>                
-            </fieldset>
+				<input type="checkbox" id="hitachi" value="Hitachi" name="producers">
+				<label for="hitachi">Hitachi</label>
+			</fieldset>
 
-            <fieldset>
-                <legend>Питание:</legend>
+			<fieldset>
+				<legend>Питание:</legend>
 
-                <input type="radio" id="accum" value="Аккумуляторные" name="products">
-                <label for="accum">Аккумуляторные</label>
+				<input type="radio" id="accum" value="Аккумуляторные" name="products">
+				<label for="accum">Аккумуляторные</label>
 
-                <input type="radio" id="seti" value="Сетевые" name="products">
-                <label for="seti">Сетевые</label>
-            </fieldset>
+				<input type="radio" id="seti" value="Сетевые" name="products">
+				<label for="seti">Сетевые</label>
+			</fieldset>
 
-            <button type="submit">Показать</button>
-            <!-- <button type="reset">Очистить форму</button> -->
-        </form>
+			<button type="submit">Показать</button>
+			<!-- <button type="reset">Очистить форму</button> -->
+		</form>
 
 		<div>
 			<p>Сортировка:</p>
@@ -207,7 +209,7 @@
 				<a href="#">В заклаадки</a>
 				<h3>Перфоратор Bosh<br>
 					BFG 2000</h3><br>
-					12500 Р.
+				12500 Р.
 			</li>
 			<li>
 				<img src="#" alt="Перфоратор Bosh BFG 3000"><br>
@@ -229,7 +231,7 @@
 				<img src="#" alt="Перфоратор Bosh BFG 2000"><br>
 				<h3>Перфоратор Bosh<br>
 					BFG 2000</h3><br>
-					12500 Р.
+				12500 Р.
 			</li>
 			<li>
 				<!-- Тут картинка или текст со стилем? -->
@@ -251,30 +253,33 @@
 				<img src="#" alt="Перфоратор Bosh BFG 2000"><br>
 				<h3>Перфоратор Bosh<br>
 					BFG 2000</h3><br>
-					12500 Р.
+				12500 Р.
 			</li>
 		</ul>
-		
+
 		<ul>
 
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Сдедующая</a></li>
-        </ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">Сдедующая</a></li>
+		</ul>
 
 		<div>
 			<p>Пара слов о перфораторах</p>
 			<p>
-				Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнить функцию дрели, шуруповерта и отбойного молотка. В<br>
-				ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+				Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+				кирпиче, бетоне и камне.<br>
+				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнить функцию
+				дрели, шуруповерта и отбойного молотка. В<br>
+				ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
+				ударная дрель.
 			</p>
 		</div>
 	</main>
 
 	<footer>
-		<section>
+		<div>
 			<img src='#' alt='ТЕХНОМАРТ'>
 			<p>
 				г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -313,9 +318,9 @@
 					<a href="#">Спецпредложения</a>
 				</li>
 			</ul>
-		</section>
+		</div>
 
-		<section>
+		<div>
 			<p>
 				С 2010-2019 Компания «Техномарт»<br>
 				Все права защищены
@@ -333,7 +338,8 @@
 				Разработано
 				<a href='https://htmlacademy.ru'>htmlacademy</a>
 			</p>
-		</section>
+		</div>
 	</footer>
 </body>
-<html>
+
+</html>
