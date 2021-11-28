@@ -20,6 +20,7 @@
 		<!-- В лекциях говорили, что это логотип -->
 		<img src='#' alt='ТЕХНОМАРТ'>
 		<form action="#" method="get">
+			<button type="submit">Лупа</button>
 			<input name="s" placeholder="Поиск" type="search">
 		</form>
 		<ul>
@@ -101,10 +102,9 @@
 
 		<div>
 			<ul>
+				<!-- Или тут вообще ничего не надобыло писать. Эта кнопка должна возвращать на главную? -->
 				<li>
-					<a href="#">
-						<img src="#" alt="Домой">
-					</a>
+					<a href="#">Домой</a>
 				</li>
 				<li>
 					<a href="#">Каталог</a>
@@ -118,29 +118,27 @@
 		</div>
 
 		<h1>Перфораторы</h1>
-		<div>
-			<h2>Фильтр:</h2>
-			<form action="#">
-				<fieldset>
-					<legend>Цена:</legend>
 
-					<label for="volume">
-						<input type="range" id="volume" name="volume" min="0" max="3">
-					</label>
+		<h2>Фильтр:</h2>
+		<form action="#">
+			<fieldset>
+				<legend>Цена:</legend>
 
-					<label for="min">
-						<input type="text" id="min" name="price" value="0">
-					</label>
+				<!-- Лишним это не будет? -->
+				<label for="volume">
+					<input type="range" id="volume" name="volume" min="0" max="3">
+				</label>
 
-					<label for="max">
-						<input type="text" id="max" name="price" value="30000">
-					</label>
+				<label for="min">
+					<input type="text" id="min" name="price" value="0">
+				</label>
 
-				</fieldset>
-			</form>
-		</div>
+				<label for="max">
+					<input type="text" id="max" name="price" value="30000">
+				</label>
 
-		<form>
+			</fieldset>
+
 			<fieldset>
 				<legend>Производители:</legend>
 
@@ -179,80 +177,87 @@
 			<a href="#">По цене</a>
 			<a href="#">По типу</a>
 			<a href="#">По функционалу</a>
-			<a href="#">
-				<img src="#" alt="выбор вверх">
-			</a>
-			<a href="#">
-				<img src="#" alt="выбор вниз">
-			</a>
+			<a href="#">Стрелка вверх</a>
+			<a href="#">Стрелка вниз</a>
 		</div>
 
 		<ul>
 			<li>
-				<img src="#" alt="Перфоратор Bosh BFG 3000"><br>
+				<img src="#" alt="Перфоратор Bosh BFG 3000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 3000</h3><br>
-				<del>22500 Р.</del><br>
+					BFG 3000</h3>
+				<del>22500 Р.</del>
 				<ins>15500 Р.</ins>
 			</li>
 			<li>
-				<img src="#" alt="Перфоратор Bosh BFG 6000"><br>
+				<img src="#" alt="Перфоратор Bosh BFG 6000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 6000</h3><br>
-				<del>30500 Р.</del><br>
+					BFG 6000</h3>
+				<del>30500 Р.</del>
 				<ins>25500 Р.</ins>
 			</li>
 			<li>
 				<!-- Тут картинка или текст со стилем? -->
-				<img src="#" alt="new"><br>
+				<!-- Картинка "new" каким обазом описывается? -->
+				<img src="#" alt="Перфоратор Bosh BFG 2000">
+				<button type="button"></button>
+				<!-- Эти ссылки тоже нужно во всех элементах, тогда добавить? -->
 				<a href="#">Купить</a>
 				<a href="#">В заклаадки</a>
 				<h3>Перфоратор Bosh<br>
-					BFG 2000</h3><br>
+					BFG 2000</h3>
 				12500 Р.
 			</li>
 			<li>
-				<img src="#" alt="Перфоратор Bosh BFG 3000"><br>
+				<img src="#" alt="Перфоратор Bosh BFG 3000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 3000</h3><br>
-				<del>22500 Р.</del><br>
+					BFG 3000</h3>
+				<del>22500 Р.</del>
 				<ins>15500 Р.</ins>
 			</li>
 			<li>
 				<!-- Тут картинка или текст со стилем? -->
-				<img src="#" alt="new"><br>
-				<img src="#" alt="Перфоратор Bosh BFG 6000"><br>
+				<img src="#" alt="new">
+				<img src="#" alt="Перфоратор Bosh BFG 6000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 6000</h3><br>
-				<del>30500 Р.</del><br>
+					BFG 6000</h3>
+				<del>30500 Р.</del>
 				<ins>25500 Р.</ins>
 			</li>
 			<li>
-				<img src="#" alt="Перфоратор Bosh BFG 2000"><br>
+				<img src="#" alt="Перфоратор Bosh BFG 2000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 2000</h3><br>
+					BFG 2000</h3>
 				12500 Р.
 			</li>
 			<li>
 				<!-- Тут картинка или текст со стилем? -->
-				<img src="#" alt="new"><br>
-				<img src="#" alt="Перфоратор Bosh BFG 3000"><br>
+				<img src="#" alt="new">
+				<img src="#" alt="Перфоратор Bosh BFG 3000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 3000</h3><br>
-				<del>22500 Р.</del><br>
+					BFG 3000</h3>
+				<del>22500 Р.</del>
 				<ins>15500 Р.</ins>
 			</li>
 			<li>
-				<img src="#" alt="Перфоратор Bosh BFG 6000"><br>
+				<img src="#" alt="Перфоратор Bosh BFG 6000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 6000</h3><br>
-				<del>30500 Р.</del><br>
+					BFG 6000</h3>
+				<del>30500 Р.</del>
 				<ins>25500 Р.</ins>
 			</li>
 			<li>
-				<img src="#" alt="Перфоратор Bosh BFG 2000"><br>
+				<img src="#" alt="Перфоратор Bosh BFG 2000">
+				<button type="button"></button>
 				<h3>Перфоратор Bosh<br>
-					BFG 2000</h3><br>
+					BFG 2000</h3>
 				12500 Р.
 			</li>
 		</ul>
@@ -265,8 +270,8 @@
 			<li><a href="#">Сдедующая</a></li>
 		</ul>
 
-		<div>
-			<p>Пара слов о перфораторах</p>
+		<section>
+			<h2>Пара слов о перфораторах</h2>
 			<p>
 				Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
 				кирпиче, бетоне и камне.<br>
@@ -275,7 +280,7 @@
 				ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
 				ударная дрель.
 			</p>
-		</div>
+		</section>
 	</main>
 
 	<footer>
