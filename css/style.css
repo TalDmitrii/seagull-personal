@@ -1,0 +1,191 @@
+@font-face {
+	font-family: "Cuprum";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: local("Cuprum"),
+	  url("../fonts/cuprum.woff") format("woff"),
+	  url("../fonts/cuprum.woff2") format("woff2"),
+	  url("../fonts/cuprumitalic.woff") format("woff"),
+	  url("../fonts/cuprumitalic.woff2") format("woff2"),
+	  url("../fonts/ptsans.woff") format("woff"),
+	  url("../fonts/ptsans.woff2") format("woff2");
+
+}
+
+@font-face {
+	font-family: "Cuprum";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local("Cuprum"),
+	  url("../fonts/cuprumbold.woff") format("woff"),
+	  url("../fonts/cuprumbold.woff2") format("woff2"),
+	  url("../fonts/cuprumbolditalic.woff") format("woff"),
+	  url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+	  url("../fonts/ptsansbold.woff") format("woff"),
+	  url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
+body {
+	min-width: 1140px;
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+	text-align: center;
+	color: #fff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+
+	padding: 10px;
+	/* padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px; */
+	
+	background-color: #ee3643;
+	border: none;
+}
+
+.visually-hidden {
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.main-header {
+	background-color: #f3f7f8;
+	padding-bottom: 70px;
+}
+
+.site-top {
+	display: block;
+	background-color: #293449;
+}
+
+
+.site-top__item a {
+	color: #fff;
+	padding: 12px 0px 12px 17px;
+}
+
+.order {
+	background-color: #63a63e;
+}
+
+.site-top__list {
+	list-style: none;
+}
+
+.title {
+	font-size: 16px;
+	color: #ee3643;
+}
+
+.contact-information {
+	border: 3px solid #fff;
+	font-size: 21px;
+}
+
+.contact-information a {
+	color: #ee3643;
+}
+
+.registration {
+	font-size: 21px;
+	list-style: none;
+}
+
+.registration-list {
+	list-style: none;
+}
+
+.contact-adress {
+	font-size: 14px;
+	color: #32425c;
+}
+
+.registration-logout {
+	border: 3px solid #fff;
+}
+
+.navigation {
+	background-color: #293449;
+}
+
+.navigation_list {
+	list-style: none;
+}
+
+.navigation_list a {
+	color: #fff;
+	padding: 20px 25px 19px;
+}
+
+.category-list {
+	list-style: none;
+	color: #fff;
+}
+
+.category-list h3 {
+	font-size: 24px;
+}
+
+.category-list a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.category_material {
+	background-color: #ffbf47;
+}
+
+.category_tools {
+	background-color: #3bbce3;
+}
+
+.category_technics {
+	background-color: #dc91d8;
+}
+
+.category_sale {
+	background-color: #8ed78f;
+}
+
+.category_delivery {
+	background-color: #ffc047;
+}
+
+.category_drill {
+	background-image: url("../img/slider-2.jpg");
+	color: #fff;
+}
+
+.category_drill a {
+	color: #fff;
+}
+

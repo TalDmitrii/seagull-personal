@@ -5,6 +5,8 @@
 <head>
 	<meta charset='utf-8'>
 	<title>Интернет магазин «Техномарт»</title>
+	<link href='css/normalize.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
 	<style>
 		a:hover {
 			background: #ee5b33;
@@ -13,72 +15,70 @@
 </head>
 
 <body>
-	<header>
+	<header class="main-header">
+		<div class="site-top">
+			<img src='img/logo.png' alt='ТЕХНОМАРТ'>
+			<form action="#" method="get">
+				<img src="img/icon-search.svg" alt="лупа" width="17px" height="17px">
+				<input name="search" placeholder="Поиск" type="search">
+			</form>
+			<ul class="site-top__list">
+				<li class="site-top__item"><a href="#">Закладки:0</a></li>
+				<li class="site-top__item"><a href="#">Корзина:0</a></li>
+				<li class="site-top__item"><a href="#">Оформить заказ</a></li>
+			</ul>
+		</div>
 
-		<img src='#' alt='ТЕХНОМАРТ'>
-		<form action="#" method="get">
-			<button type="submit">Лупа</button>
-			<input name="s" placeholder="Поиск" type="search">
-		</form>
-		<ul>
-			<li>
-				<a href="#">
-					Закладки:0
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					Корзина:0
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					Оформить заказ
-				</a>
-			</li>
-		</ul>
-		<h1>
+		<h1 class="title">
 			<em>
-				Интернет магазин строительных материалов и инструментов для ремонта
+				Интернет-магазин строительных материалов и инструментов для ремонта
 			</em>
 		</h1>
 
-		<div>
+		<div class="contact-information">
+			<img src="img/icon-phone.svg" alt="трубка" width="17px" height="17px">
 			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-			<ul>
+		</div>
+
+		<p class="contact-adress">
+			г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+		</p>
+
+		<div class="registration">
+			<ul class="registration-list">
 				<li>
-					<button type='button'>Войти</button>
+					<span class="registration-logout">
+						<img src="img/icon-logout.svg" alt="вход" width="20px" height="17px">
+						<button type='button'>Войти</button>
+					</span>
 				</li>
 				<li>
 					<button type='button'>Регитсрация</button>
 				</li>
 			</ul>
-			<p>
-				г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-			</p>
 		</div>
 
-		<nav>
-			<ul>
-				<li>
+		<nav class="navigation">
+			<ul class="navigation_list">
+				<li class="navigation_item">
 					<a href="#">Главная</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Компания</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Каталог</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Новости</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Спецпредложения</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Доставка</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Контакты</a>
 				</li>
 			</ul>
@@ -87,37 +87,42 @@
 	</header>
 	<main>
 		<section>
-			<h2>Категории</h2>
-			<ul>
-				<li>
+			<h2 class="category visually-hidden">Категории</h2>
+			<ul class="category-list">
+				<li class="category_material">
 					<h3>Материалы</h3>
 					<a href="#">На любой вкус</a>
+					<img src="img/icon-1.svg" alt="краска" width="45px" height="65px">
 				</li>
-				<li>
+				<li class="category_tools">
 					<h3>Инструмент</h3>
 					<a href="#">На все случаи</a>
+					<img src="img/icon-2.svg" alt="краска" width="75px" height="61px">
 				</li>
-				<li>
+				<li class="category_technics">
 					<h3>Техника</h3>
 					<a href="#">Для стройки</a>
+					<img src="img/icon-3.svg" alt="краска" width="78px" height="62px">
 				</li>
-				<li>
+				<li class="category_sale">
 					<h3>Скидка 50%</h3>
 					<a href="#">На 350 товаров</a>
+					<img src="img/icon-4.svg" alt="краска" width="59px" height="72px">
 				</li>
-				<li>
+				<li class="category_delivery">
 					<h3>Доставка</h3>
 					<a href="#">Бесплатно</a>
+					<img src="img/icon-5.svg" alt="краска" width="80px" height="64px">
 				</li>
 			</ul>
 
-			<div>
+			<div class="category_drill">
 				<h3>
 					Дрели<br>
 					Соседям на радость
 				</h3>
-				<a href="#">Открыть каталог</a>
 				<button type='button'>Влево</button>
+				<a href="#" class="button">Открыть каталог</a>
 				<button type='button'>Вправо</button>
 			</div>
 
@@ -168,46 +173,46 @@
 
 		<section>
 			<h2>Популярные производители:</h2>
-			<a href="#">Все производители</a>
+			<a href="#" class="button">Все производители</a>
 			<ul>
 				<li>
 					<a href="#">
-						<img src="#" alt="BOSH">
+						<img src="img/bosch.png" alt="BOSH">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="Makita">
+						<img src="img/makita.png" alt="Makita">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="DeWALT">
+						<img src="img/dewalt.png" alt="DeWALT">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="Интерскол">
+						<img src="img/inter.png" alt="Интерскол">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="HITACHI">
+						<img src="img/Hitachi.png" alt="HITACHI">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="LG">
+						<img src="img/LG.png" alt="LG">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="AEG">
+						<img src="img/AEG.png" alt="AEG">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="#" alt="metabo">
+						<img src="img/Metabo.png" alt="metabo">
 					</a>
 				</li>
 			</ul>
