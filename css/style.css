@@ -5,24 +5,58 @@
 	font-weight: 400;
 	src: local("Cuprum"),
 	  url("../fonts/cuprum.woff") format("woff"),
-	  url("../fonts/cuprum.woff2") format("woff2"),
+	  url("../fonts/cuprum.woff2") format("woff2");
+
+}
+
+@font-face {
+	font-family: "Cuprum-italic";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: local("Cuprum"),
 	  url("../fonts/cuprumitalic.woff") format("woff"),
-	  url("../fonts/cuprumitalic.woff2") format("woff2"),
+	  url("../fonts/cuprumitalic.woff2") format("woff2");
+
+}
+
+@font-face {
+	font-family: "PT SANS";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: local("Cuprum"),
 	  url("../fonts/ptsans.woff") format("woff"),
 	  url("../fonts/ptsans.woff2") format("woff2");
 
 }
 
 @font-face {
-	font-family: "Cuprum";
+	font-family: "Cuprum Bold";
 	font-style: normal;
 	font-display: swap;
 	font-weight: 700;
 	src: local("Cuprum"),
 	  url("../fonts/cuprumbold.woff") format("woff"),
-	  url("../fonts/cuprumbold.woff2") format("woff2"),
+	  url("../fonts/cuprumbold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Cuprum Bold Italic";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local("Cuprum"),
 	  url("../fonts/cuprumbolditalic.woff") format("woff"),
-	  url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+	  url("../fonts/cuprumbolditalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "PT SANS Bold";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local("Cuprum"),
 	  url("../fonts/ptsansbold.woff") format("woff"),
 	  url("../fonts/ptsansbold.woff2") format("woff2");
 }
@@ -189,3 +223,100 @@ a {
 	color: #fff;
 }
 
+.popular-tools {
+	background-color: #f9f5f0;
+}
+
+.popular-producers {
+	background-color: #f9f5f0;
+}
+
+.service {
+	background-color: #f4f8f9;
+}
+
+.service-title {
+	font-size: 30px;
+}
+
+.service-list {
+	list-style: none;
+}
+
+.service p {
+	font-family: "PT SANS";
+	font-size: 13px;	
+}
+
+.service-delivery {
+	font-size: 36px;
+}
+
+.service-type {
+	font-size: 21px;
+}
+
+.company-title {
+	font-size: 30px;
+}
+
+.company p {
+	font-family: "PT SANS";
+	font-size: 13px;
+}
+
+.company a {
+	font-size: 14px;
+}
+
+.company-list {
+	list-style: none;
+}
+
+.contacts-title {
+	font-size: 30px;
+}
+
+.contacts p {
+	font-family: "PT SANS";
+	font-size: 13px;
+}
+
+.contacts a {
+	font-size: 14px;
+}
+
+footer {
+	background-color: #32425c;
+	color: #fff;
+	font-size: 18px;
+}
+
+footer a {
+	color: #fff;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.offers-list {
+	list-style: none;
+}
+
+.offers-list a {
+	color: #ffd180;
+}
+
+.footer-information {
+	background-color: #293449;
+	font-size: 16px;
+}
+
+.footer-information_lsit {
+	list-style: none;
+}
+
+.footer-information p a {
+	color: #f5c97d;
+}

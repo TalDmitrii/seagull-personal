@@ -17,10 +17,11 @@
 <body>
 	<header class="main-header">
 		<div class="site-top">
-			<img src='img/logo.png' alt='ТЕХНОМАРТ'>
+			<img src='img/logo.png' alt='ТЕХНОМАРТ' width="220" height="47">
 			<form action="#" method="get">
-				<img src="img/icon-search.svg" alt="лупа" width="17px" height="17px">
-				<input name="search" placeholder="Поиск" type="search">
+				<label>
+					<input name="search" placeholder="Поиск" type="search">
+				</label>
 			</form>
 			<ul class="site-top__list">
 				<li class="site-top__item"><a href="#">Закладки:0</a></li>
@@ -36,7 +37,6 @@
 		</h1>
 
 		<div class="contact-information">
-			<img src="img/icon-phone.svg" alt="трубка" width="17px" height="17px">
 			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
 		</div>
 
@@ -48,7 +48,6 @@
 			<ul class="registration-list">
 				<li>
 					<span class="registration-logout">
-						<img src="img/icon-logout.svg" alt="вход" width="20px" height="17px">
 						<button type='button'>Войти</button>
 					</span>
 				</li>
@@ -92,27 +91,22 @@
 				<li class="category_material">
 					<h3>Материалы</h3>
 					<a href="#">На любой вкус</a>
-					<img src="img/icon-1.svg" alt="краска" width="45px" height="65px">
 				</li>
 				<li class="category_tools">
 					<h3>Инструмент</h3>
 					<a href="#">На все случаи</a>
-					<img src="img/icon-2.svg" alt="краска" width="75px" height="61px">
 				</li>
 				<li class="category_technics">
 					<h3>Техника</h3>
 					<a href="#">Для стройки</a>
-					<img src="img/icon-3.svg" alt="краска" width="78px" height="62px">
 				</li>
 				<li class="category_sale">
 					<h3>Скидка 50%</h3>
 					<a href="#">На 350 товаров</a>
-					<img src="img/icon-4.svg" alt="краска" width="59px" height="72px">
 				</li>
 				<li class="category_delivery">
 					<h3>Доставка</h3>
 					<a href="#">Бесплатно</a>
-					<img src="img/icon-5.svg" alt="краска" width="80px" height="64px">
 				</li>
 			</ul>
 
@@ -130,8 +124,11 @@
 		</section>
 
 		<section>
-			<h2>Популярные товары:</h2>
-			<a href="#">Все популярные товары</a>
+			<div class="popular-tools">
+				<h2>Популярные товары:</h2>
+				<a href="#" class="button">Все популярные товары</a>
+			</div>
+
 			<ul>
 				<li>
 					<img src="img/snippet-1.png" width="144" height="164" alt="Перфоратор Bosh BFG 9000">
@@ -147,7 +144,7 @@
 					<h3>Перфоратор Bosh<br>
 						BFG 3000</h3>
 					<del>32500 Р.</del>
-					<ins>15500 Р.</ins>
+					<a href="#" class="button"><ins>15500 Р.</ins></a>
 					<a href="#">Купить</a>
 					<button type="button">В закладки</button>
 				</li>
@@ -172,81 +169,86 @@
 		</section>
 
 		<section>
-			<h2>Популярные производители:</h2>
-			<a href="#" class="button">Все производители</a>
+			<div class="popular-producers">
+				<h2>Популярные производители:</h2>
+				<a href="#" class="button">Все производители</a>
+			</div>
+
 			<ul>
 				<li>
 					<a href="#">
-						<img src="img/bosch.png" alt="BOSH">
+						<img src="img/bosch.png" alt="BOSH" width="126" height="37">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/makita.png" alt="Makita">
+						<img src="img/makita.png" alt="Makita" width="123" height="40">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/dewalt.png" alt="DeWALT">
+						<img src="img/dewalt.png" alt="DeWALT" width="146" height="44">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/inter.png" alt="Интерскол">
+						<img src="img/inter.png" alt="Интерскол" width="200" height="88">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/Hitachi.png" alt="HITACHI">
+						<img src="img/Hitachi.png" alt="HITACHI" width="169" height="31">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/LG.png" alt="LG">
+						<img src="img/LG.png" alt="LG" width="121" height="73">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/AEG.png" alt="AEG">
+						<img src="img/AEG.png" alt="AEG" width="151" height="96">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="img/Metabo.png" alt="metabo">
+						<img src="img/Metabo.png" alt="metabo" width="204" height="69">
 					</a>
 				</li>
 			</ul>
 		</section>
 
-		<section>
-			<h2>Сервисы</h2>
+		<section class="service">
+			<h2 class="service-title">Сервисы</h2>
 			<p>
 				Хорший интернет магазин отличается от плохого не только ценами!<br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 			</p>
 
-			<ul>
-				<li>
+			<ul class="service-list">
+				<li class="service-type">
 					<button type='button'>Доставка</button>
 				</li>
-				<li>
+				<li class="service-type">
 					<button type='button'>Гарантия</button>
 				</li>
-				<li>
+				<li class="service-type">
 					<button type='button'>Кредит</button>
 				</li>
 			</ul>
-			<h3>Доставка</h3>
+			<h3 class="service-delivery">Доставка</h3>
 			<p>
 				Мы с удовольствием доставим ваш товар прямо<br>
 				к вашему подъезду совершенно бесплатно!<br>
 				Ведь мы неплохо заработае,<br>
 				поднимая его на ваш этаж!
 			</p>
+
+			<img src="img/delivery.png" alt="машинка" width="206" height="146">
 		</section>
 
-		<section>
-			<h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+		<section class="company">
+			<h2 class="company-title">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
 			<p>
 				Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонота и<br>
 				строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -255,7 +257,7 @@
 				Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 				Техномарт работает со многими транспортными компаниями:
 			</p>
-			<ul>
+			<ul class="company-list">
 				<li>
 					- Деловые линии
 				</li>
@@ -266,29 +268,29 @@
 					- ЖелДорЭкспедиция
 				</li>
 			</ul>
-			<a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+			<a href="#" class="button">ПОДРОБНЕЕ О КОМПАНИИ</a>
 		</section>
 
-		<section>
-			<h2>КОНТАКТЫ</h2>
+		<section class="contacts">
+			<h2  class="contacts-title">КОНТАКТЫ</h2>
 			<p>
 				Вы можете забрать товар сами,<br>
 				заехав в наш офис:
 			</p>
-			<img src='#' alt="Карта" />
-			<a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЬЕ НАМ!</a>
+			<img src="img/map.jpg" alt="Карта" width="300" height="158">
+			<a href="#" class="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
 		</section>
 	</main>
 
 	<footer>
 		<div>
-			<img src='#' alt='ТЕХНОМАРТ'>
+			<img src="img/footer-logo.png" alt='ТЕХНОМАРТ' width="220" height="68">
 			<p>
 				г. Санкт-Петербург, Б. Конюшенная, д. 19/8
 			</p>
 			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
 
-			<ul>
+			<ul class="nav-list">
 				<li>
 					<a href="#">Компания</a>
 				</li>
@@ -306,7 +308,7 @@
 				</li>
 			</ul>
 
-			<ul>
+			<ul class="offers-list">
 				<li>
 					<a href="#">Материалы</a>
 				</li>
@@ -322,15 +324,27 @@
 			</ul>
 		</div>
 
-		<div>
+		<div class="footer-information">
 			<p>
 				С 2010-2019 Компания «Техномарт»<br>
 				Все права защищены
 			</p>
-			<ul>
-				<li><a href='#'>Вконтакте</a></li>
-				<li><a href='#'>Фейсбук</a></li>
-				<li><a href='#'>Инстаграм</a></li>
+			<ul class="footer-information_lsit">
+				<li>
+					<a href='#'>
+						<img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15">
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						<img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22">
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						<img src="img/insta-icon.svg" alt="Инстаграм" width="21" height="21">
+					</a>
+				</li>
 			</ul>
 			<p>
 				Обратная связь:
