@@ -227,6 +227,19 @@ a {
 	background-color: #f9f5f0;
 }
 
+.popular-tools h2 {
+	font-size: 30px;
+}
+
+.list-tools {
+	font-family: "PT SANS";
+	font-size: 17px;
+}
+
+.list-tools h3 {
+	font-size: 18px;
+}
+
 .popular-producers {
 	background-color: #f9f5f0;
 }
@@ -320,3 +333,133 @@ footer a {
 .footer-information p a {
 	color: #f5c97d;
 }
+
+
+/* Каталог */
+
+.login {
+	font-size: 21px;
+}
+
+.data-list {
+	list-style: none;
+}
+
+.data-list a {
+	color: #32425c;
+	font-size: 16px;
+}
+
+.catalog-main {
+	font-family: "PT SANS";
+}
+
+.search-list {
+	list-style: none;
+}
+
+.search-list a {
+	font-size: 13px;
+	color: #000;
+}
+
+.catalog-title {
+	font-family: "Cuprum";
+	font-size: 30px;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+.filter {
+	font-size: 13px;
+	color: #32425c;
+	background-color: #f7f3ec;
+}
+
+.price {
+	font-size: 17px;
+}
+
+.range {
+	background-color: #f7f3ec;
+}
+
+.coast {
+	background-color: #f7f3ec;
+}
+
+.catalog-produced {
+	font-size: 15px;
+}
+
+.legend-produced {
+	font-size: 17px;
+}
+
+.catalog-energy {
+	font-size: 15px;
+}
+
+.legend-energy {
+	font-size: 17px;
+}
+
+.show {
+	font-size: 13px;
+}
+
+.sorting {
+	background-color: #f7f3ec;
+	font-size: 13px;
+	color: #cacaca;
+}
+
+.sorting-price {
+	color: #ee3643;
+}
+
+.sorting-type {
+	color: #cacaca;
+}
+
+.sorting-function {
+	color: #cacaca;
+}
+
+.sorting-up {
+	color: #ee3643;
+}
+
+.sorting-down {
+	color: #cacaca;
+}
+
+.pages {
+	font-size: 13px;
+	list-style: none;
+}
+
+.pages a {
+	color: #000;
+}
+
+.about-drill {
+	background-color: #f2f6f8;
+	font-size: 13px;
+}
+
+.about-drill h3 {
+	font-family: "Cuprum";
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+

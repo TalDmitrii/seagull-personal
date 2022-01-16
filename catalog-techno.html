@@ -10,47 +10,38 @@
 </head>
 
 <body>
-	<header>
+	<header class="main-header">
+		<div class="site-top">
+			<img src='img/logo.png' alt='ТЕХНОМАРТ' width="220" height="47">
+			<form action="#" method="get">
+				<label>
+					<input name="search" placeholder="Поиск" type="search">
+				</label>
+			</form>
+			<ul class="site-top__list">
+				<li class="site-top__item"><a href="#">Закладки:0</a></li>
+				<li class="site-top__item"><a href="#">Корзина:0</a></li>
+				<li class="site-top__item"><a href="#">Оформить заказ</a></li>
+			</ul>
+		</div>
 
-		<!-- В лекциях говорили, что это логотип -->
-		<img src='#' alt='ТЕХНОМАРТ'>
-		<form action="#" method="get">
-			<button type="submit">Лупа</button>
-			<input name="s" placeholder="Поиск" type="search">
-		</form>
-		<ul>
-			<li>
-				<a href="#">
-					Закладки:0
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					Корзина:0
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					Оформить заказ
-				</a>
-			</li>
-		</ul>
-		<h1>
+		<h1 class="title">
 			<em>
-				Интернет магазин строительных материалов и инструментов для ремонта
+				Интернет-магазин строительных материалов и инструментов для ремонта
 			</em>
 		</h1>
 
-		<div>
+		<div class="contact-information">
 			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-			<p>
-				г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-			</p>
 		</div>
+
+		<p class="contact-adress">
+			г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+		</p>
 		<div>
 			<!-- Какой тип action? -->
-			<button type="button">Равшан Джамшутович</button>
-			<ul>
+			<button type="button" class="login">Равшан Джамшутович</button>
+			<ul class="data-list">
 				<li>
 					<a href="#">
 						Мои заказы
@@ -64,40 +55,40 @@
 			</ul>
 		</div>
 
-		<nav>
-			<ul>
-				<li>
+		<nav class="navigation">
+			<ul class="navigation_list">
+				<li class="navigation_item">
 					<a href="#">Главная</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Компания</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Каталог</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Новости</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Спецпредложения</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Доставка</a>
 				</li>
-				<li>
+				<li class="navigation_item">
 					<a href="#">Контакты</a>
 				</li>
 			</ul>
 		</nav>
 
 	</header>
-	<main>
+	<main class="catalog-main">
 
-		<div>
-			<ul>
+		<div class="search">
+			<ul class="search-list">
 				<!-- Или тут вообще ничего не надобыло писать. Эта кнопка должна возвращать на главную? -->
 				<li>
-					<a href="#">Домой</a>
+					<a href="index.html">Домой</a>
 				</li>
 				<li>
 					<a href="#">Каталог</a>
@@ -110,38 +101,41 @@
 			</ul>
 		</div>
 
-		<h1>Перфораторы</h1>
+		<h2 class="catalog-title">Перфораторы</h2>
 
-		<h2>Фильтр:</h2>
+		<h3 class="filter">Фильтр:</h3>
 		<form action="#">
 			<fieldset>
-				<legend>Цена:</legend>
+				<legend class="price">Цена:</legend>
 
-				<!-- Лишним это не будет? -->
-				<label for="volume">
-					<input type="range" id="volume" name="volume" min="0" max="3">
-				</label>
-
-				<label for="min">
-					<input type="text" id="min" name="price" value="0">
-				</label>
-
-				<label for="max">
-					<input type="text" id="max" name="price" value="30000">
-				</label>
-
+				<div class="range">
+					<!-- Лишним это не будет? -->
+					<label for="volume">
+						<input type="range" id="volume" name="volume" min="0" max="3">
+					</label>
+				</div>
+				
+				<div class="coast">
+					<label for="min">
+						<input type="text" id="min" name="price" value="0">
+					</label>
+	
+					<label for="max">
+						<input type="text" id="max" name="price" value="30000">
+					</label>
+				</div>
 			</fieldset>
 
-			<fieldset>
-				<legend>Производители:</legend>
+			<fieldset class="catalog-produced">
+				<legend class="legend-produced">Производители:</legend>
 
-				<input type="checkbox" id="bosh" value="Bosh" name="producers">
+				<input type="checkbox" id="bosh" value="Bosh" name="producers" checked>
 				<label for="bosh">Bosh</label>
 
 				<input type="checkbox" id="interskol" value="Интерскол" name="producers">
 				<label for="interskol">Интерскол</label>
 
-				<input type="checkbox" id="makita" value="Makita" name="producers">
+				<input type="checkbox" id="makita" value="Makita" name="producers" checked>
 				<label for="makita">Makita</label>
 
 				<input type="checkbox" id="dewalt" value="Dewalt" name="producers">
@@ -151,30 +145,30 @@
 				<label for="hitachi">Hitachi</label>
 			</fieldset>
 
-			<fieldset>
-				<legend>Питание:</legend>
+			<fieldset class="catalog-energy">
+				<legend class="legend-energy">Питание:</legend>
 
-				<input type="radio" id="accum" value="Аккумуляторные" name="products">
+				<input type="radio" id="accum" value="Аккумуляторные" name="products" checked>
 				<label for="accum">Аккумуляторные</label>
 
 				<input type="radio" id="seti" value="Сетевые" name="products">
 				<label for="seti">Сетевые</label>
 			</fieldset>
 
-			<button type="submit">Показать</button>
+			<button type="submit" class="show">Показать</button>
 			<!-- <button type="reset">Очистить форму</button> -->
 		</form>
 
-		<div>
+		<div class="sorting">
 			<p>Сортировка:</p>
-			<a href="#">По цене</a>
-			<a href="#">По типу</a>
-			<a href="#">По функционалу</a>
-			<a href="#">Стрелка вверх</a>
-			<a href="#">Стрелка вниз</a>
+			<a href="#" class="sorting-price">По цене</a>
+			<a href="#" class="sorting-type">По типу</a>
+			<a href="#" class="sorting-function">По функционалу</a>
+			<a href="#" class="sorting-up">Стрелка вверх</a>
+			<a href="#" class="sorting-down">Стрелка вниз</a>
 		</div>
 
-		<ul>
+		<ul class="list-tools">
 			<li>
 				<img src="img/snippet-2.png" width="127" height="112" alt="Перфоратор Bosh BFG 3000">
 				<h3>Перфоратор Bosh<br>
@@ -258,16 +252,14 @@
 			</li>
 		</ul>
 
-		<ul>
-
+		<ul class="pages">
 			<li><a href="#">1</a></li>
 			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
 			<li><a href="#">Сдедующая</a></li>
 		</ul>
 
-		<section>
-			<h2>Пара слов о перфораторах</h2>
+		<section class="about-drill">
+			<h3>Пара слов о перфораторах</h3>
 			<p>
 				Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
 				кирпиче, бетоне и камне.<br>
