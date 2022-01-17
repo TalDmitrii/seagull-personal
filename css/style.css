@@ -127,6 +127,11 @@ a {
 	padding: 12px 0px 12px 17px;
 }
 
+.site-top__item a:hover,
+.site-top__item a:focus {
+	background-color: #212a3a;
+}
+
 .order {
 	background-color: #63a63e;
 }
@@ -138,11 +143,13 @@ a {
 .title {
 	font-size: 16px;
 	color: #ee3643;
+	line-height: 23px;
 }
 
 .contact-information {
 	border: 3px solid #fff;
 	font-size: 21px;
+	line-height: 18px;
 }
 
 .contact-information a {
@@ -158,9 +165,14 @@ a {
 	list-style: none;
 }
 
+.registration-list button {
+	line-height: 18px;
+}
+
 .contact-adress {
 	font-size: 14px;
 	color: #32425c;
+	line-height: 24px;
 }
 
 .registration-logout {
@@ -168,6 +180,12 @@ a {
 }
 
 .navigation {
+	background-color: #32425c;
+	line-height: 17px;
+}
+
+.navigation a:hover,
+.navigation a:focus {
 	background-color: #293449;
 }
 
@@ -187,36 +205,73 @@ a {
 
 .category-list h3 {
 	font-size: 24px;
+	line-height: 30px;
 }
 
 .category-list a {
 	color: #fff;
 	font-size: 14px;
+	line-height: 18px;
 }
 
 .category_material {
 	background-color: #ffbf47;
 }
 
+.category_material a:hover,
+.category_material a:focus {
+	background-color: rgba(189,125,0,.3);
+}
+
 .category_tools {
 	background-color: #3bbce3;
+}
+
+.category_tools a:hover,
+.category_tools a:focus {
+	background-color: rgba(42,131,158,.3);
 }
 
 .category_technics {
 	background-color: #dc91d8;
 }
 
+.category_technics a:hover,
+.category_technics a:focus {
+	background-color: rgba(161,111,158,.2);
+}
+
 .category_sale {
 	background-color: #8ed78f;
+}
+
+.category_sale a:hover,
+.category_sale a:focus {
+	background-color: rgba(113,159,113,.2);
 }
 
 .category_delivery {
 	background-color: #ffc047;
 }
 
+.category_delivery a:hover,
+.category_delivery a:focus {
+	background-color: rgba(175,132,50,.3);
+}
+
 .category_drill {
 	background-image: url("../img/slider-2.jpg");
 	color: #fff;
+	line-height: 30px;
+}
+
+.category_drill a:hover,
+.category_drill a:focus {
+	background-color: #ca2c37;
+}
+
+.category_drill--height {
+	line-height: 24px;
 }
 
 .category_drill a {
@@ -229,6 +284,11 @@ a {
 
 .popular-tools h2 {
 	font-size: 30px;
+	line-height: 30px;
+}
+
+.popular-tools a {
+	line-height: 18px;
 }
 
 .list-tools {
@@ -238,18 +298,42 @@ a {
 
 .list-tools h3 {
 	font-size: 18px;
+	line-height: 20px;
+}
+
+.list-tools del {
+	line-height: 18px;
+}
+
+.list-tools ins {
+	line-height: 18px;
 }
 
 .popular-producers {
 	background-color: #f9f5f0;
 }
 
+.popular-producers h2 {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.popular-producers a {
+	font-size: 14px;
+	line-height: 18px;
+}
+
 .service {
 	background-color: #f4f8f9;
 }
 
+.service p {
+	line-height: 24px;
+}
+
 .service-title {
 	font-size: 30px;
+	line-height: 24px;
 }
 
 .service-list {
@@ -263,10 +347,15 @@ a {
 
 .service-delivery {
 	font-size: 36px;
+	line-height: 24px;
 }
 
 .service-type {
 	font-size: 21px;
+}
+
+.company {
+	line-height: 24px;
 }
 
 .company-title {
@@ -280,10 +369,15 @@ a {
 
 .company a {
 	font-size: 14px;
+	line-height: 18px;
 }
 
 .company-list {
 	list-style: none;
+}
+
+.contacts {
+	line-height: 24px;
 }
 
 .contacts-title {
@@ -297,12 +391,14 @@ a {
 
 .contacts a {
 	font-size: 14px;
+	line-height: 18px;
 }
 
 footer {
 	background-color: #32425c;
 	color: #fff;
 	font-size: 18px;
+	line-height: 24px;
 }
 
 footer a {
@@ -324,6 +420,7 @@ footer a {
 .footer-information {
 	background-color: #293449;
 	font-size: 16px;
+	line-height: 18px;
 }
 
 .footer-information_lsit {
@@ -339,6 +436,7 @@ footer a {
 
 .login {
 	font-size: 21px;
+	line-height: 18px;
 }
 
 .data-list {
@@ -361,6 +459,7 @@ footer a {
 .search-list a {
 	font-size: 13px;
 	color: #000;
+	line-height: 18px;
 }
 
 .catalog-title {
@@ -368,16 +467,19 @@ footer a {
 	font-size: 30px;
 	color: #32425c;
 	background-color: #f2f6f8;
+	line-height: 30px;
 }
 
 .filter {
 	font-size: 13px;
 	color: #32425c;
 	background-color: #f7f3ec;
+	line-height: 18px;
 }
 
 .price {
 	font-size: 17px;
+	line-height: 30px;
 }
 
 .range {
@@ -390,14 +492,25 @@ footer a {
 
 .catalog-produced {
 	font-size: 15px;
+	line-height: 30px;
+}
+
+.catalog-produced label {
+	line-height: 20px;
 }
 
 .legend-produced {
 	font-size: 17px;
+	line-height: 30px;
 }
 
 .catalog-energy {
 	font-size: 15px;
+	line-height: 30px;
+}
+
+.catalog-energy label {
+	line-height: 20px;
 }
 
 .legend-energy {
@@ -406,12 +519,14 @@ footer a {
 
 .show {
 	font-size: 13px;
+	line-height: 18px;
 }
 
 .sorting {
 	background-color: #f7f3ec;
 	font-size: 13px;
 	color: #cacaca;
+	line-height: 18px;
 }
 
 .sorting-price {
@@ -434,18 +549,20 @@ footer a {
 	color: #cacaca;
 }
 
-.pages {
+.pagination {
 	font-size: 13px;
 	list-style: none;
+	line-height: 18px;
 }
 
-.pages a {
+.pagination a {
 	color: #000;
 }
 
 .about-drill {
 	background-color: #f2f6f8;
 	font-size: 13px;
+	line-height: 24px;
 }
 
 .about-drill h3 {
