@@ -157,7 +157,6 @@ a {
 }
 
 .registration {
-	font-size: 21px;
 	list-style: none;
 }
 
@@ -166,6 +165,7 @@ a {
 }
 
 .registration-list button {
+	font-size: 21px;
 	line-height: 18px;
 }
 
@@ -309,8 +309,24 @@ a {
 	line-height: 18px;
 }
 
+.list-tools a {
+	font-size: 14px;
+	color: #fff;
+	background-color: #63a63e;
+}
+
+.list-tools button {
+	font-size: 14px;
+	color: #000;
+	border-color: #63a63e;
+}
+
 .popular-producers {
 	background-color: #f9f5f0;
+}
+
+.popular-producers-list {
+	list-style: none;
 }
 
 .popular-producers h2 {
@@ -321,6 +337,11 @@ a {
 .popular-producers a {
 	font-size: 14px;
 	line-height: 18px;
+}
+
+.popular-producers-list a:hover,
+.popular-producers-list a:focus {
+    box-shadow: 0 10px 35px 0 #bec2c6;
 }
 
 .service {
@@ -350,8 +371,15 @@ a {
 	line-height: 24px;
 }
 
-.service-type {
+.service-type button {
+	color: #fff;
 	font-size: 21px;
+	background-color: #32425c;
+}
+
+.service-type button:hover,
+.service-type button:focus {
+	background-color: #293449;
 }
 
 .company {
@@ -405,6 +433,11 @@ footer a {
 	color: #fff;
 }
 
+footer a:hover,
+footer a:focus {
+	text-decoration: underline;
+}
+
 .nav-list {
 	list-style: none;
 }
@@ -425,6 +458,11 @@ footer a {
 
 .footer-information_lsit {
 	list-style: none;
+}
+
+.footer-information_lsit a:hover,
+.footer-information_lsit a:focus {
+	background-color: #ee3643;
 }
 
 .footer-information p a {
@@ -460,6 +498,12 @@ footer a {
 	font-size: 13px;
 	color: #000;
 	line-height: 18px;
+}
+
+.search-list a:hover,
+.search-list a:focus {
+	color: #ee3643;
+	text-decoration: underline;
 }
 
 .catalog-title {
@@ -528,6 +572,11 @@ footer a {
 	color: #cacaca;
 	line-height: 18px;
 }
+.sorting a:hover,
+.sorting a:focus {
+	color: #293449;
+	text-decoration: underline;
+}
 
 .sorting-price {
 	color: #ee3643;
@@ -557,6 +606,12 @@ footer a {
 
 .pagination a {
 	color: #000;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+	color: #ee3643;
+	border-color: #bdc6ca;
 }
 
 .about-drill {
