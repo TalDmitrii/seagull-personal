@@ -95,6 +95,11 @@ a {
 	border: none;
 }
 
+.button:hover,
+.button:focus {
+	background-color: #ca2c37;
+}
+
 .visually-hidden {
 	position: absolute;
     clip: rect(0 0 0 0);
@@ -156,17 +161,18 @@ a {
 	color: #ee3643;
 }
 
-.registration {
+.authorization {
 	list-style: none;
 }
 
-.registration-list {
+.authorization-list {
 	list-style: none;
 }
 
-.registration-list button {
+.authorization-list button {
 	font-size: 21px;
 	line-height: 18px;
+
 }
 
 .contact-adress {
@@ -175,9 +181,26 @@ a {
 	line-height: 24px;
 }
 
-.registration-logout {
+.authorization-login {
 	border: 3px solid #fff;
+	padding: 11px 27px 11px 48px;
+    margin-right: 10px;
 }
+
+.authorization-login:hover,
+.authorization-login:focus {
+	color: #ee3643;
+}
+
+.registration {
+	border: 3px solid #fff;
+	padding: 11px 24px;
+ }
+
+ .registration:hover,
+ .registration:focus {
+	 color: #ee3643;
+ }
 
 .navigation {
 	background-color: #32425c;
@@ -212,10 +235,16 @@ a {
 	color: #fff;
 	font-size: 14px;
 	line-height: 18px;
+	padding: 10px 0;
 }
 
 .category_material {
 	background-color: #ffbf47;
+}
+
+.category_material a {
+	padding: 10px 0;
+	background-color: rgba(189,125,0,.2);
 }
 
 .category_material a:hover,
@@ -263,11 +292,6 @@ a {
 	background-image: url("../img/slider-2.jpg");
 	color: #fff;
 	line-height: 30px;
-}
-
-.category_drill a:hover,
-.category_drill a:focus {
-	background-color: #ca2c37;
 }
 
 .category_drill--height {
@@ -460,6 +484,13 @@ footer a:focus {
 	list-style: none;
 }
 
+.footer-information_lsit a {
+	background-color: #212a3a;
+	width: 41px;
+	height: 41px;
+	border-radius: 50%;
+}
+
 .footer-information_lsit a:hover,
 .footer-information_lsit a:focus {
 	background-color: #ee3643;
@@ -475,6 +506,7 @@ footer a:focus {
 .login {
 	font-size: 21px;
 	line-height: 18px;
+    padding: 15px 68px 13px 47px;
 }
 
 .data-list {
