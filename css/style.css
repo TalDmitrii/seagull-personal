@@ -141,6 +141,10 @@ a {
 	height: 47px;
 }
 
+.search-form input {
+	color: #f0f1f2;
+}
+
 .input-search {
 	background-color: transparent;
 	border: 0;
@@ -154,11 +158,13 @@ a {
 	display: flex;
 	margin: auto;
 	list-style: none;
+	padding: 0;
 }
 
 .site-top__item {
 	width: 150px;
 	text-align: center;
+	text-transform: none;
 }
 
 .site-top__item a {
@@ -172,8 +178,28 @@ a {
 	background-color: #212a3a;
 }
 
-.order {
+.site-top__item--green {
 	background-color: #63a63e;
+}
+
+.site-top__item--green a {
+	padding: 12px 0;
+}
+
+.site-top__item--green a:hover {
+	background-color: #5fbb2d;
+}
+
+.site-top__item--red {
+	background-color: #ee3643;
+}
+
+.site-top__item--red a {
+	padding: 12px 0px 12px 22px;
+}
+
+.site-top__item--red a:hover {
+	background-color: red;
 }
 
 .about {
@@ -221,6 +247,7 @@ a {
 	color: #32425c;
 	line-height: 24px;
 	margin: 3px 0 0 22px;
+	text-transform: none;
 }
 
 .authorization-list {
@@ -231,7 +258,7 @@ a {
 .authorization-list button {
 	font-size: 21px;
 	line-height: 18px;
-
+	background-color: #fff;
 }
 
 .authorization-login {
@@ -803,29 +830,56 @@ footer a:focus {
 	font-size: 21px;
 	line-height: 18px;
     padding: 15px 68px 13px 47px;
+	background-color: #fff;
+	border: 0;
 }
 
 .data-list {
+	display: flex;
 	list-style: none;
+	margin: 7px 0 0 18px;
+	padding: 0;
 }
 
 .data-list a {
 	color: #32425c;
 	font-size: 16px;
+	text-decoration: underline;
+	text-transform: none;
 }
+
+.data-list a:first-of-type {
+	margin-right: 28px;
+}
+
+/* Страница Catalog */
 
 .catalog-main {
 	font-family: "PT SANS";
 }
 
 .search-list {
+	display: flex;
 	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
 }
 
 .search-list a {
 	font-size: 13px;
 	color: #000;
 	line-height: 18px;
+	margin-right: 13px;
+	padding-right: 27px;
+}
+
+.search-list li:nth-of-type(3) a {
+	margin-right: 17px;
+}
+
+.search-list li:nth-of-type(4) a {
+	margin: 0;
+	padding: 0;
 }
 
 .search-list a:hover,
@@ -840,6 +894,18 @@ footer a:focus {
 	color: #32425c;
 	background-color: #f2f6f8;
 	line-height: 30px;
+	margin: 21px 0 0 0;
+	padding: 30px 0 31px 28px;
+
+}
+
+.container-catalog {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter-catalog {
+	width: 220px;
 }
 
 .filter {
@@ -847,6 +913,12 @@ footer a:focus {
 	color: #32425c;
 	background-color: #f7f3ec;
 	line-height: 18px;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	border: 0;
 }
 
 .price {
@@ -894,12 +966,27 @@ footer a:focus {
 	line-height: 18px;
 }
 
+.tools-catalog {
+	width: 700px;
+}
+
 .sorting {
 	background-color: #f7f3ec;
 	font-size: 13px;
 	color: #cacaca;
 	line-height: 18px;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 17px 11px 19px;
+	border-radius: 4px;
 }
+
+.sorting a {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
 .sorting a:hover,
 .sorting a:focus {
 	color: #293449;
@@ -926,14 +1013,63 @@ footer a:focus {
 	color: #cacaca;
 }
 
+.list-tools-catalog {
+	font-family: "PT SANS";
+	font-size: 17px;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.popular-item {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	height: 316px;
+	margin: 0 17px 20px 0;
+	padding: 0 0 25px 0;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.popular-item--margin {
+	margin: 0 0 20px 0;
+}
+
+.popular-item h3 {
+	font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+	margin: 12px 0 0 0;
+	padding: 0 30px 0 30px;
+	text-transform: none;
+}
+
 .pagination {
+	display: flex;
 	font-size: 13px;
 	list-style: none;
 	line-height: 18px;
+	width: 700px;
+	margin-top: 31px;
+}
+
+.pagination li {
+	margin-right: 11px;
 }
 
 .pagination a {
+	display: block;
 	color: #000;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	padding: 10px 14px;
+}
+
+.pagination li:nth-of-type(4) a{
+	padding: 10px 31px;
 }
 
 .pagination a:hover,
@@ -946,6 +1082,8 @@ footer a:focus {
 	background-color: #f2f6f8;
 	font-size: 13px;
 	line-height: 24px;
+	margin: 60px 0 0 0;
+	padding: 62px 0 69px 0;
 }
 
 .about-drill h3 {
@@ -953,7 +1091,9 @@ footer a:focus {
 	font-size: 30px;
 }
 
-
+.about-drill p {
+	text-transform: none;
+}
 
 
 
