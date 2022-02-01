@@ -329,6 +329,7 @@ a {
 .category-list h3 {
 	font-size: 24px;
 	line-height: 30px;
+	margin: 0 0 14px;
 }
 
 .category-list a {
@@ -397,6 +398,7 @@ a {
 	color: #fff;
 	justify-content: space-between;
 	padding: 0;
+	margin: 0;
 	flex-direction: column;
 	text-transform: none;
 }
@@ -404,6 +406,7 @@ a {
 .category-list_part2 h3 {
 	font-size: 24px;
 	line-height: 30px;
+	margin: 0 0 14px;
 }
 
 .category-list_part2 a {
