@@ -199,7 +199,7 @@ a {
 }
 
 .site-top__item--red a:hover {
-	background-color: red;
+	background-color: #ff0011;
 }
 
 .about {
@@ -301,9 +301,9 @@ a {
 .navigation_list {
 	list-style: none;
 	display: flex;
-    border-bottom: 5px solid #293449;
-    padding-left: 21px;
-    padding-right: 25px;
+	border-bottom: 5px solid #293449;
+	padding-left: 21px;
+	padding-right: 25px;
 	justify-content: space-between;
 }
 
@@ -318,6 +318,7 @@ a {
 	color: #fff;
 	justify-content: space-between;
 	padding: 0;
+	text-transform: none;
 }
 .same {
 	width: 300px;
@@ -336,18 +337,22 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	padding: 10px 0;
+	text-transform: uppercase;
 }
 
 .category_material {
 	background-color: #ffbf47;
 }
 
-.category_material a {
-	background-color: rgba(189,125,0,.2);
+.promo a {
 	padding: 10px 0;
 	width: 136px;
 	border-radius: 5px;
 	text-align: center;
+}
+
+.category_material a {
+	background-color: rgba(189,125,0,.2);
 }
 
 .category_material a:hover,
@@ -361,10 +366,6 @@ a {
 
 .category_tools a{
 	background-color: rgba(42,131,158,.2);
-	padding: 10px 0;
-	width: 136px;
-	border-radius: 5px;
-	text-align: center;
 }
 
 .category_tools a:hover,
@@ -378,10 +379,6 @@ a {
 
 .category_technics a {
 	background-color: rgba(161,111,158,.2);
-	padding: 10px 0;
-	width: 136px;
-	border-radius: 5px;
-	text-align: center;
 }
 
 .category_technics a:hover,
@@ -401,6 +398,7 @@ a {
 	justify-content: space-between;
 	padding: 0;
 	flex-direction: column;
+	text-transform: none;
 }
 
 .category-list_part2 h3 {
@@ -414,6 +412,7 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	padding: 10px 0;
+	text-transform: uppercase;
 }
 
 .category_sale {
@@ -422,10 +421,6 @@ a {
 
 .category_sale a {
 	background-color: rgba(113,159,113,.2);
-	padding: 10px 0;
-	width: 136px;
-	border-radius: 5px;
-	text-align: center;
 }
 
 .category_sale a:hover,
@@ -439,10 +434,6 @@ a {
 
 .category_delivery a {
 	background-color: rgba(175,132,50,.2);
-	padding: 10px 0;
-	width: 136px;
-	border-radius: 5px;
-	text-align: center;
 }
 
 .category_delivery a:hover,
@@ -458,7 +449,12 @@ a {
 	height: 266px;
 }
 
+.category_drill-title {
+	font-style: 36px;
+}
+
 .category_drill--height {
+	font-style: 18px;
 	line-height: 24px;
 }
 
