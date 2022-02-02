@@ -454,15 +454,29 @@ a {
 
 .category_drill-title {
 	font-style: 36px;
+	line-height: 30px;
+	margin: 0;
 }
 
 .category_drill--height {
+	display: block;
+	margin: 3px 0 0 0;
 	font-style: 18px;
 	line-height: 24px;
 }
 
 .category_drill a {
+	margin: 102px 0 0 26px;
+	padding: 10px 0;
 	color: #fff;
+}
+
+.popular-tools, .popular-producers {
+	padding: 28px 28px 28px 26px;
+}
+
+.popular-tools-container {
+	margin-top: 54px;
 }
 
 .popular-tools, .popular-producers {
@@ -474,6 +488,7 @@ a {
 .popular-tools h2 {
 	font-size: 30px;
 	line-height: 30px;
+	margin: 0;	
 }
 
 .popular-tools a, .popular-producers a {
@@ -492,23 +507,41 @@ a {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	margin: 17px 0 0 0;
 	padding: 0;
 }
 
 .list-tools li {
+	display: flex;
 	border: 1px solid #eaeaea;
 	width: 220px;
 	padding-bottom: 25px;
 	text-align: center;
+	flex-direction: column;
 }
+
+.list-tools-img {
+	height: 167px;
+	margin: 0;
+	width: 220px;
+}
+
+/* .list-tools-img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+} */
 
 .list-tools h3 {
 	font-size: 18px;
 	line-height: 20px;
+	margin: 12px 0 0 0;
+	padding: 0 30px;
 }
 
 .list-tools del {
 	line-height: 18px;
+	margin: 10px 0 0 0;
 }
 
 .list-tools ins {
@@ -527,14 +560,20 @@ a {
 	border-color: #63a63e;
 }
 
+.popular-producers-container {
+	margin-top: 18px;
+}
+
 .popular-producers {
 	background-color: #f9f5f0;
+	margin-bottom: 17px;
 }
 
 .popular-producers-list {
 	display: flex;
 	list-style: none;
 	flex-wrap: wrap;
+	margin: 0;
 	padding: 0;
 	justify-content: space-between;
 }
@@ -555,6 +594,7 @@ a {
 .popular-producers h2 {
 	font-size: 30px;
 	line-height: 30px;
+	margin: 0;
 }
 
 .popular-producers a {
@@ -582,6 +622,7 @@ a {
 
 .service-title {
 	font-size: 30px;
+	font-weight: 400;
 	line-height: 24px;
 	margin: 0;
 }
@@ -591,9 +632,8 @@ a {
 	font-size: 13px;
 	line-height: 24px;
 	width: 400px;
-	height: 48px;
-	margin-top: 29px;
-	text-decoration: none;
+	margin: 29px 0 0 0;
+	text-transform: none;
 }
 
 .service-container {
@@ -614,6 +654,8 @@ a {
 .service-delivery {
 	font-size: 36px;
 	line-height: 24px;
+	font-weight: 400;
+	margin: 0;
 }
 
 .service-type button{
@@ -804,13 +846,14 @@ footer a:focus {
 }
 
 .footer-social_list a {
-	display: block;
+	display: flex;
 	background-color: #212a3a;
 	width: 41px;
 	height: 41px;
 	border-radius: 50%;
 	align-items: center;
 	margin-right: 4px;
+	justify-content: center;
 }
 
 .footer-social_list a:hover,
