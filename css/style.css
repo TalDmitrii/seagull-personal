@@ -1,3 +1,4 @@
+/* Разобраться с написанием локального шрифта */
 @font-face {
 	font-family: "Cuprum";
 	font-style: normal;
@@ -10,14 +11,34 @@
 }
 
 @font-face {
-	font-family: "Cuprum-italic";
-	font-style: normal;
+	font-family: "Cuprum";
+	font-style: italic;
 	font-display: swap;
 	font-weight: 400;
-	src: local("Cuprum"),
+	src: local("Cuprumitalic"),
 	  url("../fonts/cuprumitalic.woff") format("woff"),
 	  url("../fonts/cuprumitalic.woff2") format("woff2");
 
+}
+
+@font-face {
+	font-family: "Cuprum";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local("Cuprumbold"),
+	  url("../fonts/cuprumbold.woff") format("woff"),
+	  url("../fonts/cuprumbold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Cuprum";
+	font-style: italic;
+	font-display: swap;
+	font-weight: 700;
+	src: local("Cuprumbolditalic"),
+	  url("../fonts/cuprumbolditalic.woff") format("woff"),
+	  url("../fonts/cuprumbolditalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -25,41 +46,24 @@
 	font-style: normal;
 	font-display: swap;
 	font-weight: 400;
-	src: local("Cuprum"),
+	src: local("PT SANS"),
 	  url("../fonts/ptsans.woff") format("woff"),
 	  url("../fonts/ptsans.woff2") format("woff2");
 
 }
 
-@font-face {
-	font-family: "Cuprum Bold";
-	font-style: normal;
-	font-display: swap;
-	font-weight: 700;
-	src: local("Cuprum"),
-	  url("../fonts/cuprumbold.woff") format("woff"),
-	  url("../fonts/cuprumbold.woff2") format("woff2");
-}
 
 @font-face {
-	font-family: "Cuprum Bold Italic";
+	font-family: "PT SANS";
 	font-style: normal;
 	font-display: swap;
 	font-weight: 700;
-	src: local("Cuprum"),
-	  url("../fonts/cuprumbolditalic.woff") format("woff"),
-	  url("../fonts/cuprumbolditalic.woff2") format("woff2");
-}
-
-@font-face {
-	font-family: "PT SANS Bold";
-	font-style: normal;
-	font-display: swap;
-	font-weight: 700;
-	src: local("Cuprum"),
+	src: local("PT SANS Bold"),
 	  url("../fonts/ptsansbold.woff") format("woff"),
 	  url("../fonts/ptsansbold.woff2") format("woff2");
 }
+
+/* FOIT FOUT FOFT */
 
 body {
 	min-width: 1140px;
@@ -1137,8 +1141,39 @@ fieldset {
 	text-transform: none;
 }
 
+/* Button Cuprum */
+/* .button {
+	font-family: "Cuprum";
+	font-weight: 400;
+}
 
+.button-normal {
+	font-style: normal;
+}
 
+.button-italic {
+	font-style: italic;
+}
+
+.button-bold {
+	font-style: normal;
+	font-weight: 700;
+}
+
+.button-bold-italic {
+	font-style: italic;
+	font-weight: 700;
+} */
+
+/* Text PT Sans */
+/* .text {
+	font-family: "PT SANS";
+	font-style: normal;
+}
+
+.text-bold {
+	font-weight: 700;
+} */
 
 
 
