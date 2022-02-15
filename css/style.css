@@ -269,6 +269,7 @@ a {
 	border: 3px solid #fff;
 	padding: 11px 27px 11px 48px;
     margin-right: 10px;
+	cursor: pointer;
 }
 
 .authorization-login:hover,
@@ -457,23 +458,67 @@ a {
 	height: 266px;
 }
 
-.category_drill-title {
-	font-style: 36px;
+.description {
+	padding: 26px 25px 22px;
+	background-color: rgba(0,0,0,.2);
+}
+
+.description h3 {
+	font-size: 36px;
 	line-height: 30px;
 	margin: 0;
 }
 
-.category_drill--height {
+.description span {
 	display: block;
 	margin: 3px 0 0 0;
-	font-style: 18px;
+	font-size: 18px;
 	line-height: 24px;
+	text-transform: none;
+	font-family: "PT Sans",Arial,sans-serif;
+}
+
+.slider_button {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 587px;
+}
+
+.slider_button label {
+	display: block;
+}
+
+.slider_button label::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	border: 3px solid #fff;
+	position: absolute;
+	transform: rotate(45deg);
+	top: 14px;
+
+}
+
+.slider_button label:nth-of-type(1)::before {
+	border-top-style: none;
+	border-right-style: none;
+	left: 30px;
+}
+
+.slider_button label:nth-of-type(2)::before {
+	border-bottom-style: none;
+	border-left-style: none;
+	left: 568px;
 }
 
 .category_drill a {
-	margin: 102px 0 0 26px;
+	display: block;
+	margin: 104px 0 0 26px;
 	padding: 10px 0;
 	color: #fff;
+	width: 195px;
 }
 
 .popular-tools, .popular-producers {
@@ -557,10 +602,7 @@ a {
 }
 
 .btn-test ul {
-	display: flex;
-	flex-direction: column;
 	list-style: none;
-	position: relative;
 }
 
 .btn-test button {
@@ -730,18 +772,28 @@ a {
 	margin: 0;
 }
 
-.service-type button{
+.service-type button {
 	color: #fff;
 	font-size: 21px;
 	background-color: #32425c;
 	padding: 20px 22px 18px;
 	text-align: left;
+	border: none;
+	box-shadow: inset 0 -1px 0 0 #293449, inset 0 1px 0 0 #405069;
+	cursor: pointer;
 }
 
 .service-type button:hover,
 .service-type button:focus {
 	background-color: #293449;
 }
+
+.service-type:nth-of-type(1) button {
+	box-shadow: none;
+	background-color: #fff;
+	color: #32425c;
+}
+
 
 .about-company {
 	display: flex;
@@ -1060,12 +1112,46 @@ fieldset {
 	background-color: #f7f3ec;
 	padding: 38px 20px;
 	border-radius: 4px;
+	position: relative;
+}
+
+.range p {
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+.range .line {
+    width: 180px;
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range .line-full {
+	width: 160px;
+	height: 2px;
+	background-color: #00ca74;
+	position: absolute;
+	top: 38px;
+}
+
+.range .range-left {
+	position: absolute;
+	top: 29px;
+	left: 20px;
+}
+
+.range .range-right {
+	position: absolute;
+	top: 29px;
+	left: 160px;
 }
 
 .coast {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 8px;
+	position: relative;
 }
 
 .coast input {
@@ -1076,6 +1162,17 @@ fieldset {
 	border-radius: 4px;
 	text-align: center;
 }
+
+.coast label:nth-of-type(1)::after {
+	content: "";
+	width: 10px;
+	height: 1px;
+	position: absolute;
+	background-color: #444;
+	top: 22px;
+	left: 105px;
+}
+
 
 .catalog-produced {
 	font-size: 15px;
@@ -1109,13 +1206,27 @@ fieldset {
 
 .catalog-produced label::before {
 	content: "";
-	width: 21px;
-	height: 21px;
+	width: 25px;
+	height: 25px;
+	border-radius: 4px;
 	border: 2px solid #c5c5c5;
 	position: absolute;
-	border-radius: 4px;
 	top: 0;
 	left: 0;
+}
+
+.catalog-produced_firm label::after {
+	content: "";
+	width: 21px;
+	height: 13px;
+	border: 4px solid #c5c5c5;
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	border-top-style: none;
+	border-right-style: none;
+	transform: rotate(-45deg);
+	box-shadow: inset 0 -2px 0 0 #fff, 0 2px 0 0 #fff;
 }
 
 .legend-produced {
@@ -1140,13 +1251,24 @@ fieldset {
 
 .catalog-energy label::before {
 	content: "";
-	width: 14px;
-	height: 14px;
+	width: 24px;
+	height: 24px;
 	border: 5px solid #c5c5c5;
 	position: absolute;
 	border-radius: 50%;
 	top: 0;
 	left: 0;
+}
+
+.catalog-energy label::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	background-color: #c5c5c5;
+	position: absolute;
+	border-radius: 50%;
+	top: 8px;
+	left: 8px;
 }
 
 .catalog-energy label {
@@ -1206,6 +1328,18 @@ fieldset {
 	width: 43px;
 	padding: 0;
 	font-weight: 700;
+	position: relative;
+}
+
+.sorting-button li::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	position: absolute;
+	top: 3px;
+	left: -2px;
+	transform: rotate(45deg);
 }
 
 .sorting p {
