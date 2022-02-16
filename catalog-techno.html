@@ -121,11 +121,21 @@
 					<fieldset class="catalog-price">
 						<legend class="price">Цена:</legend>
 		
-						<div class="range">
-							<!-- Лишним это не будет? -->
+						<!-- <div class="range">
 							<label for="volume">
 								<input type="range" id="volume" name="volume" min="0" max="3">
 							</label>
+						</div> -->
+
+						<div class="range">
+							<p class="line-full"></p>
+							<p class="line"></p>
+							<p class="range-left">
+								<img src="img/filter-button.svg" width="20" height="23" alt="Левый ползунок">
+							</p>
+							<p class="range-right">
+								<img src="img/filter-button.svg" width="20" height="23" alt="Правый ползунок">
+							</p>
 						</div>
 		
 						<div class="coast">
@@ -142,7 +152,7 @@
 					<fieldset class="catalog-produced">
 						<legend class="legend-produced">Производители:</legend>
 
-						<ul>
+						<ul class="catalog-produced_firm">
 							<li>
 								<input class="visually-hidden" type="checkbox" id="BOSCH" value="BOSCH" name="producers" checked>
 								<label for="BOSCH">BOSCH</label>
@@ -202,7 +212,7 @@
 
 					<ul class="sorting-button">
 						<li>
-							<a href="#" class="sorting-up">+</a>
+							<a  class="visually-hidden" href="#" class="sorting-up">+</a>
 						</li>
 						<li>
 							<a href="#" class="sorting-down">-</a>
