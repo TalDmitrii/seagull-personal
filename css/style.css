@@ -143,6 +143,7 @@ a {
 	display: block;
 	width: 220px;
 	height: 47px;
+	margin-bottom: -3px;
 }
 
 .search-form input {
@@ -348,7 +349,28 @@ a {
 }
 
 .category_material {
+	position: relative;
+	overflow: hidden;
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
 	background-color: #ffbf47;
+	background-position: center right 44px;
+}
+
+.category_material::after {
+	content: "new";
+	color: #ffffff;
+	background-color: #ee3643;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	padding: 4px 8px;
+	width: 80px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -23px;
+	transform: rotate(45deg);
 }
 
 .promo a {
@@ -450,12 +472,41 @@ a {
 	background-color: rgba(175,132,50,.3);
 }
 
+.category_slider {
+	margin: 0;
+	padding: 0;
+}
+
 .category_drill {
-	background-image: url("../img/slider-2.jpg");
 	color: #fff;
 	line-height: 30px;
 	width: 620px;
 	height: 266px;
+}
+
+.category_drill--1 {
+	background-image: url("../img/slider-2.jpg");
+}
+
+.category_drill--2 {
+	background-image: url("../img/slider-1.jpg");
+}
+
+.category_drill a {
+	display: block;
+	margin: 104px 0 0 26px;
+	padding: 10px 0;
+	color: #fff;
+	width: 195px;
+}
+
+.category_drill {
+	display: none;
+}
+
+.input-slider-1:checked ~ .category_slider .category_drill--1,
+.input-slider-2:checked ~ .category_slider .category_drill--2 {
+	display: block;
 }
 
 .description {
@@ -478,47 +529,60 @@ a {
 	font-family: "PT Sans",Arial,sans-serif;
 }
 
+.slider_wrap {
+	position: relative;
+}
+
 .slider_button {
 	display: flex;
 	justify-content: space-between;
-	position: relative;
-	width: 587px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
 }
 
 .slider_button label {
 	display: block;
+	width: 30px;
+	height: 30px;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
 }
 
-.slider_button label::before {
-	content: "";
-	width: 24px;
-	height: 24px;
-	color: #fff;
-	border: 3px solid #fff;
-	position: absolute;
+.slider_button label:nth-child(1) {
 	transform: rotate(45deg);
-	top: 14px;
-
+	margin-left: 32px;
 }
 
-.slider_button label:nth-of-type(1)::before {
-	border-top-style: none;
-	border-right-style: none;
-	left: 30px;
+.slider_button label:nth-child(2) {
+	transform: rotate(-135deg);
+	margin-right: 32px;
 }
 
-.slider_button label:nth-of-type(2)::before {
-	border-bottom-style: none;
-	border-left-style: none;
-	left: 568px;
+.slider_pagination {
+	width: 40px;
+	justify-content: space-between;
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.category_drill a {
-	display: block;
-	margin: 104px 0 0 26px;
-	padding: 10px 0;
-	color: #fff;
-	width: 195px;
+.slider_pagination label {
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.input-slider-1:checked ~ .slider_pagination label:nth-child(1),
+.input-slider-2:checked ~ .slider_pagination label:nth-child(2) {
+	background-color: red;
 }
 
 .popular-tools, .popular-producers {
@@ -770,7 +834,7 @@ a {
 
 .service-delivery {
 	font-size: 36px;
-	line-height: 24px;
+	line-height: 48px;
 	font-weight: 400;
 	margin: 0;
 }
@@ -1249,10 +1313,7 @@ fieldset {
 	left: 0;
 }
 
-/* .catalog-produced_firm input:checked + label::after
-как это работает? */
-
-.catalog-produced_firm input:checked ~ label::after {
+.catalog-produced_firm input ~ label::after {
 	content: "";
 	width: 21px;
 	height: 13px;
@@ -1366,10 +1427,11 @@ fieldset {
 }
 
 .sorting-button {
+	display: flex;
+	justify-content: space-between;
 	width: 43px;
 	padding: 0;
 	font-weight: 700;
-	position: relative;
 }
 
 .sorting-button li::before {
@@ -1416,14 +1478,21 @@ fieldset {
 
 /* Как работает? */
 
-.button-up, .button-down {
+.button-up,
+.button-down {
 	width: 0;
 	height: 0;
 	padding: 0;
 	border-style: solid;
-	border-width: 0 5.5px 10px;
+	border-width: 0 6px 10px; 
 	border-color: transparent transparent #c5c5c5;
-	margin-top: 5px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.button-up:hover,
+.button-down:hover {
+	border-bottom-color: #000000;
 }
 
 .button-up {
