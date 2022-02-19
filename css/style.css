@@ -1249,7 +1249,10 @@ fieldset {
 	left: 0;
 }
 
-.catalog-produced_firm label::after {
+/* .catalog-produced_firm input:checked + label::after
+как это работает? */
+
+.catalog-produced_firm input:checked ~ label::after {
 	content: "";
 	width: 21px;
 	height: 13px;
@@ -1294,7 +1297,7 @@ fieldset {
 	left: 0;
 }
 
-.catalog-energy label::after {
+.catalog-energy input:checked ~ label::after {
 	content: "";
 	width: 8px;
 	height: 8px;
@@ -1403,13 +1406,34 @@ fieldset {
 	color: #cacaca;
 }
 
-.sorting-up {
+/* .sorting-up {
 	color: #ee3643;
 }
 
 .sorting-down {
 	color: #cacaca;
+} */
+
+/* Как работает? */
+
+.button-up, .button-down {
+	width: 0;
+	height: 0;
+	padding: 0;
+	border-style: solid;
+	border-width: 0 5.5px 10px;
+	border-color: transparent transparent #c5c5c5;
+	margin-top: 5px;
 }
+
+.button-up {
+	border-color: transparent transparent #ee3643;
+}
+
+.button-down {
+	transform: rotate(180deg);
+}
+
 
 .pagination {
 	display: flex;
