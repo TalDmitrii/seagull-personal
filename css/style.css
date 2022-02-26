@@ -249,6 +249,11 @@ a {
 	background-color: #ee3643;
 }
 
+
+.site-top__item--red svg {
+	fill: #f3737c;
+}
+
 .site-top__item--red a {
 	padding: 12px 0px 12px 22px;
 }
@@ -361,7 +366,7 @@ a {
 
  .registration:hover,
  .registration:focus {
-	 color: #ee3643;
+	color: #ee3643;
  }
 
 .navigation {
@@ -635,7 +640,7 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: none;
-	font-family: "PT Sans",Arial,sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 
 .slider_wrap {
@@ -727,7 +732,7 @@ a {
 }
 
 .list-tools {
-	font-family: "PT SANS";
+	font-family: "PT SANS", Arial, sans-serif;
 	font-size: 17px;
 	list-style: none;
 	display: flex;
@@ -750,7 +755,7 @@ a {
 }
 
 .list-tools_index .list-tools__item:nth-child(4):after {
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	text-transform: none;
 	content: "new";
 	color: #ffffff;
@@ -771,7 +776,7 @@ a {
 .popular-item .list-tools__item:nth-child(3):after,
 .popular-item .list-tools__item:nth-child(5):after,
 .popular-item .list-tools__item:nth-child(7):after {
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	text-transform: none;
 	content: "new";
 	color: #ffffff;
@@ -971,7 +976,7 @@ a {
 }
 
 .service p {
-	font-family: "PT Sans",Arial,sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	width: 400px;
@@ -1097,7 +1102,7 @@ a {
 }
 
 .about-company p {
-	font-family: "PT SANS";
+	font-family: "PT SANS", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	text-transform: none;
@@ -1291,19 +1296,48 @@ footer a:focus {
 
 /* Каталог */
 
+.user-info {
+	position: relative;
+ }
+
 .login {
 	font-size: 21px;
 	line-height: 18px;
     padding: 15px 68px 13px 47px;
 	background-color: #fff;
 	border: 0;
+	/* cursor: pointer; */
 }
+
+ .user-info svg:nth-of-type(1) {
+	position: absolute;
+	top: 0px;
+	left: 13px;
+	fill: #B7BFC8;
+	cursor: pointer;
+ }
+
+ .user-info svg:nth-of-type(2) {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	fill: #B7BFC8;
+	cursor: pointer;
+ }
+
+ .user-info:hover svg,
+ .user-info:focus svg {
+	fill: #32425C;
+ }
+
+
 
 .data-list {
 	display: flex;
 	list-style: none;
 	margin: 7px 0 0 18px;
 	padding: 0;
+	position: relative;
 }
 
 .data-list a {
@@ -1313,14 +1347,30 @@ footer a:focus {
 	text-transform: none;
 }
 
+.data-list a:hover,
+.data-list a:focus {
+	color: #ee3643;
+}
+
 .data-list a:first-of-type {
 	margin-right: 28px;
+}
+
+.data-list a:nth-of-type(1)::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #32425c;
+	position: absolute;
+	top: 8px;
+	left: 85px;
 }
 
 /* Страница Catalog */
 
 .catalog-main {
-	font-family: "PT SANS";
+	font-family: "PT SANS", Arial, sans-serif;
 }
 
 .search-list {
@@ -1328,6 +1378,35 @@ footer a:focus {
 	list-style: none;
 	padding: 0;
 	margin: 10px 0 0 0;
+	position: relative;
+}
+
+.home:hover .homy path,
+.home:focus .homy path,
+.home:hover .homy polygon,
+.home:focus .homy polygon {
+	fill: #32425c;
+}
+
+.search-item:not(:last-child) a::after {
+	content: "";
+	width: 9px;
+	height: 9px;
+	border: 1px solid #c1c6ce;
+	border-bottom-style: none;
+	border-left-style: none;
+	position: absolute;
+	top: 5px;
+	left: 26px;
+	transform: rotate(45deg);
+}
+
+.search-item:nth-child(2) a::after {
+	left: 120px;
+}
+
+.search-item:nth-child(3) a::after {
+	left: 240px;
 }
 
 .search-list a {
@@ -1354,7 +1433,7 @@ footer a:focus {
 }
 
 .catalog-title {
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	color: #32425c;
 	background-color: #f2f6f8;
@@ -1781,7 +1860,7 @@ fieldset {
 }
 
 .about-drill h3 {
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 }
 
