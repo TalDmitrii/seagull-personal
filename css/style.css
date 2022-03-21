@@ -192,10 +192,9 @@ a {
 }
 
 /* Не могу перекрасить лупу в красный при выборе инпута! */
-/* 
-.input-search:focus .svg {
+.input-search:focus ~ svg {
 	fill: red;
-} */
+}
 
 .site-top__list {
 	display: flex;
@@ -336,7 +335,8 @@ a {
 	fill: #B7BFC8;
 }
 
-.authorization-list li:hover svg {
+.authorization-list button:hover svg,
+.authorization-list button:focus svg {
 	fill: #32425C;
 }
 
