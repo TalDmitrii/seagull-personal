@@ -30,13 +30,15 @@
 				</form>
 				<ul class="site-top__list">
 					<li class="site-top__item">
-						<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+						<a href="#">
+							<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px"
 							viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
 							<path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
 	C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z" />
-						</svg>
-						<a href="#">Закладки: 0</a>
+							</svg>
+							Закладки: 0
+						</a>
 					</li>
 					<li class="site-top__item">
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +51,19 @@
 									points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	" />
 							</g>
 						</svg>
-						<a href="#">Корзина: 0</a>
+						<a href="#">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
+							viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+							<g>
+								<circle cx="4.5" cy="13.5" r="1.5" />
+								<circle cx="12.5" cy="13.5" r="1.5" />
+								<polygon
+									points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	" />
+							</g>
+							</svg>							
+							Корзина: 0
+						</a>
 					</li>
 					<li class="site-top__item site-top__item--green"><a href="#">Оформить заказ</a></li>
 				</ul>
@@ -241,7 +255,7 @@
 					<div class="btn-test">
 						<ul>
 							<li>
-								<button class="button-buy" type="button">Купить</button>
+								<button class="button-buy j-button-buy" type="button">Купить</button>
 							</li>
 							<li>
 								<button class="button-bookmarks" type="button">В закладки</button>
@@ -260,7 +274,7 @@
 					<div class="btn-test">
 						<ul>
 							<li>
-								<button class="button-buy" type="button">Купить</button>
+								<button class="button-buy j-button-buy" type="button">Купить</button>
 							</li>
 							<li>
 								<button class="button-bookmarks" type="button">В закладки</button>
@@ -279,7 +293,7 @@
 					<div class="btn-test">
 						<ul>
 							<li>
-								<button class="button-buy" type="button">Купить</button>
+								<button class="button-buy j-button-buy" type="button">Купить</button>
 							</li>
 							<li>
 								<button class="button-bookmarks" type="button">В закладки</button>
@@ -297,7 +311,7 @@
 					<div class="btn-test">
 						<ul>
 							<li>
-								<button class="button-buy" type="button">Купить</button>
+								<button class="button-buy j-button-buy" type="button">Купить</button>
 							</li>
 							<li>
 								<button class="button-bookmarks" type="button">В закладки</button>
@@ -306,6 +320,19 @@
 					</div>
 				</li>
 			</ul>
+		</section>
+
+		<section class="modal j-modal">
+			<div class="information">
+				<!-- Хотел сделать span вместо р не получилось -->
+				<p class="icon"></p>
+				<h2>Товар добавлен в корзину!</h2>
+			</div>
+			<div class="information-button">
+				<a href="#">Оформить заказ</a>
+				<button>Продолжить покупки</button>
+			</div>
+			<button class="modal-close j-modal-close"></button>
 		</section>
 
 		<section class="popular-producers-container container">
@@ -387,7 +414,7 @@
 									поднимая его на ваш этаж!
 								</p>
 							</div>
-							<img src="img/delivery.png" alt="машинка" width="206" height="146">
+							<!-- <img src="img/delivery.png" alt="машинка" width="206" height="146"> -->
 						</li>
 						<li class="service-item--2">
 							<div>
@@ -549,6 +576,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>
