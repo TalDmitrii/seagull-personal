@@ -217,9 +217,9 @@ a {
 	fill: #6a7180;
 }
 
-.site-top__item:hover svg {
+/* .site-top__item:hover svg {
 	fill: #fff;
-}
+} */
 
 .site-top__item a {
 	display: block;
@@ -232,6 +232,11 @@ a {
 	background-color: #212a3a;
 }
 
+.site-top__item a:hover svg,
+.site-top__item a:focus svg {
+	fill: #fff;
+}
+
 .site-top__item--green {
 	background-color: #63a63e;
 }
@@ -240,7 +245,8 @@ a {
 	padding: 12px 0;
 }
 
-.site-top__item--green a:hover {
+.site-top__item--green a:hover,
+.site-top__item--green a:focus {
 	background-color: #5fbb2d;
 }
 
@@ -1033,6 +1039,7 @@ a {
 	min-height: 285px;
 	margin-left: 80px;
 	display: none;
+	position: relative;
 }
 
 .service-list button {
@@ -1057,6 +1064,18 @@ a {
 	background-color: #fff;
 	color: #32425c;
 	box-shadow: none;
+}
+
+
+/* Сделал фоном эту картинку */
+.service-item--1::after {
+	content: "";
+	background-image: url("../img/delivery.png");
+	width: 206px;
+	height: 146px;
+	position: absolute;
+	top: 30px;
+	left: 410px;
 }
 
 .service-delivery {
@@ -1903,7 +1922,130 @@ fieldset {
 } */
 
 
+/* Всплывающие окна */
 
+.modal {
+	display: none;
+	position: fixed;
+	width: 620px;
+	top: 10px;
+	left: 50%;
+	margin-left: -310px;
+	background-color: #fff;
+	border-top: 7px solid #ee3643;
+	box-shadow: 0 15px 32px 0 #ccc;
+}
 
+.modal-show {
+	display: block;
+}
 
+.information {
+	display: flex;
+	padding: 45px 80px 49px;
+	position: relative;
+}
 
+.information h2 {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: none;
+	font-weight: normal;
+	margin: 0;
+	align-self: center;
+}
+
+.information .icon {
+	position: relative;
+	width: 67px;
+	height: 67px;
+	background-color: #63a63e;
+	border-radius: 50%;
+	margin: 0 30px 0 0;
+}
+
+.information .icon::before {
+	content: "";
+	position: absolute;
+	top: 18px;
+	left: 14px;
+	width: 40px;
+	height: 23px;
+	border: 8px solid #ffffff;
+	border-right-style: none;
+	border-top-style: none;
+	transform: rotate(-45deg);
+}
+
+.information-button {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f1f1f1;
+	padding: 38px 80px;
+}
+
+.information-button a {
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #ee3643;
+	padding: 10px 0;
+	color: #ffffff;
+	width: 220px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.information-button a:hover,
+.information-button a:focus {
+	background-color: #ca2c37;
+}
+
+.information-button button {
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #ffffff;
+	padding: 10px 0;
+	color: #000000;
+	width: 220px;
+	border-radius: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	border-style: none;
+	cursor: pointer;
+}
+
+.information-button button:hover,
+.information-button button:focus {
+	background-color: #fbf9f9;
+}
+
+.modal-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	border-style: none;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 2px;
+	width: 25px;
+	height: 4px;
+	background-color: #ee3643;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
